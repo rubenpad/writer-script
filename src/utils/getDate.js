@@ -1,3 +1,7 @@
+/**
+ * Helper that gets the current date and time to format them as string.
+ * @returns A string with the date and current time in format DDMMAA-HH-MM
+ */
 function getDate() {
   const now = new Date();
   const year = now
