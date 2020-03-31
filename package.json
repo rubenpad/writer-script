@@ -1,12 +1,14 @@
 {
   "name": "writer-script",
   "version": "1.0.0",
-  "description": "",
+  "description": "A small script to write messages",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "JavaScript"
+  ],
   "author": "@rubbenpad",
-  "license": "ISC"
+  "license": "MIT"
 }
