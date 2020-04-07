@@ -6,17 +6,18 @@ const fs = require('fs');
  * @returns the name of created directory
  */
 function createDir(dirname = 'unknown') {
+  const path = './src/'
   try {
-    fs.statSync(`${dirname}`);
+    fs.statSync(`${path}${dirname}`);
     console.log(
-      `${dirname} directory already exists so it will not be created again!\n`
+      `${path}${dirname} directory already exists so it will not be created again!\n`
     );
   } catch (error) {
-    fs.mkdirSync(`${dirname}`);
-    console.log(`Successfully created ${dirname} directory!\n`);
+    fs.mkdirSync(`${path}${dirname}`);
+    console.log(`Successfully created ${path}${dirname} directory!\n`);
   }
 
-  return dirname;
+  return `${path}${dirname}`
 }
 
 /**
